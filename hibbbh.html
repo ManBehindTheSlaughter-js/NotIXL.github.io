@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IXL | Dashboard</title>
+    <link rel="icon" href="https://www.ixl.com/ixl-favicon.png">
+    <style>
+    body {
+            background-color: black;
+            color: white;
+        }
+    </style> 
+</head>
+<body>
+    <h3>Enter a link or use a preset.</h3>
+
+    <button onclick="document.getElementById('myIframe').src = 'https://sandboxels.r74n.com/'">
+        Sandboxels
+    </button>
+
+    <button onclick="document.getElementById('myIframe').src = 'https://www.3dtuning.com/en-US/'">
+        Car tuning
+    </button>
+    
+    <button onclick="document.getElementById('myIframe').src = 'https://1v1.lol/'">
+        1v1.lol
+    </button>
+    
+        <button onclick="document.getElementById('myIframe').src = 'https://ww25.soap2day.day/'">
+        Movies
+    </button>
+    
+    <input type="url" id="linkInput" placeholder="Enter a URL">
+    <button onclick="document.getElementById('iframeDisplay').src = linkInput.value;">Submit</button>
+
+    <iframe id="iframeDisplay" width="1365" height="767" frameborder="0"></iframe>
+
+    
+    <iframe id="myIframe" width="1365" height="767" frameborder="0"></iframe>
+
+</body>
+</html>
